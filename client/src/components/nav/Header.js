@@ -38,18 +38,18 @@ const Header = () => {
 
   return (
     <Menu onClick={handleClick} selectedKeys={[current]} mode="horizontal" style={{ display: "block" }}>
-      <Item key="home" icon={<AppstoreOutlined />}>
+      <Item key="home:1" icon={<AppstoreOutlined />}>
         <Link to="/">Home</Link>
       </Item>
 
       {!user && (
-        <Item key="register" icon={<UserAddOutlined />} style={{ float: "right" }}>
+        <Item key="register:2" icon={<UserAddOutlined />} style={{ float: "right" }}>
           <Link to="/register">Register</Link>
         </Item>
       )}
 
       {!user && (
-        <Item key="login" icon={<UserOutlined />} style={{ float: "right" }}>
+        <Item key="login:3" icon={<UserOutlined />} style={{ float: "right" }}>
           <Link to="/login">Login</Link>
         </Item>
       )}
